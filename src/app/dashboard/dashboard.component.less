@@ -1,0 +1,134 @@
+.content {
+  flex: 1;
+//   padding: 0px;
+//   padding-bottom: 30px;
+  background: #eee;
+  box-shadow: 0 0 5px black;
+  transform: translate3d(0, 0, 0);
+  transition: transform .3s;
+  position: absolute;
+  width: 100%;
+}
+.content.isOpen {
+  transform: translate3d(220px, 0, 0);
+  height: calc(100% - 0px);
+  //margin-left: 220px;
+}
+.banner {
+    font-size: 16px;
+    line-height: 50px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #eee;
+    border-bottom: 1px solid #222;
+    background: #549834;
+}
+
+h1 {
+  margin: 25px 0 15px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+}
+
+.header{
+	background: #fff;
+	border-top:solid 3px #549834;
+	border-bottom:solid 1px fade(#D8D8D8, 70%);
+}
+
+/* LIST ITEMS */
+.cplistItem{
+	border:solid 1px #E2E2E2;
+	font-size:11px;
+	border-radius: 4px;
+	.panel-heading{
+		background:rgba(232,232,232,.5);
+		border-radius:0px;
+		border-bottom:solid 1px #E2E2E2;
+		min-height:40px;
+		padding:8px;
+	}
+	.container{
+		padding:8px;
+	}
+	h3{
+		font-size:18px;
+		color:#000000;
+		line-height:21px;
+		margin-top:8px;
+		font-weight: normal;
+	}
+}
+.glTitle{
+	color:#3B3B3B;
+	font-size:11px;
+	position:relative;
+	display:block;
+	margin-bottom:-3px;
+}
+
+.glGroup{
+	color:#696969;
+	font-size:10px;
+}
+
+.primaryGreen {
+    color: #549834;
+}
+
+.largeNumber{
+	font-size:56px;
+	line-height:56px;
+}
+.onethird{
+	float:left;
+	width:33.33%
+}
+.uppercase{
+	text-transform:uppercase;
+}
+.black {
+	color: #000;
+}
+
+.glAnalytics{
+	border-left:solid 1px fade(#D8D8D8, 50%);
+	border-right:solid 1px fade(#D8D8D8, 50%);
+	span{
+		width:100%;
+		float:left;
+		text-align:center;
+	}
+	.onethird{
+		font-size:12px;
+		.uppercase{
+			font-size:11px;
+		}
+	}	
+	.largeText {
+		font-size: 18px;
+		line-height: 18px;
+    }
+}
+.glStats{
+	border-top:solid 1px fade(#D8D8D8, 50%);
+	float:left;
+	width:100%;
+	margin-top:8px;
+	padding-top:8px;
+	
+	.statsDate {
+		color: fade(#6F6F6F, 50%);
+		margin-top: 4px;
+	}
+}
+.glSD{
+	padding-left: 20px;
+}

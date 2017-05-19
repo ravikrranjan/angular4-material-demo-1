@@ -1,0 +1,45 @@
+<div class="content isOpen">
+  <div class="banner">
+    Dashboard
+  </div>
+  <div id="inverterList">
+    <ng-template ngFor let-inverter [ngForOf]="inverters" let-i="index" let-odd="odd">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="glSD">
+              <span class="glTitle uppercase">{{inverter.name}}</span>
+              <span class="glGroup">{{inverter.solar_group}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-5 col-sm-5">
+              <div class="pull-left">
+                <app-gauge [inverter]="inverter"></app-gauge>
+              </div>
+              <div class="cpInner pull-left">
+                <span>Inverter Name:</span>
+                <span class="black">{{inverter.name}}</span>
+                <div class="row">
+                  <div class="col-sm-12 noPadmar">
+                    <span>
+                        Temperature:</span> <span class="black">{{inverter.inside_temperature}}</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 noPadmar">
+                    <span>
+                        Status:</span> <span class="black">{{inverter.connected}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <grid-analytics [inverter]="inverter"></grid-analytics>
+            <grid-device [inverter]="inverter"></grid-device>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
